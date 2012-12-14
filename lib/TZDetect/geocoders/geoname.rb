@@ -19,7 +19,7 @@ module TZDetect
           response = http.request request # Net::HTTPResponse object
           json_result =JSON.parse(response.read_body)
 
-          unless json_result["geonames"].empty?
+          if !json_result["geonames"].nil? and !json_result["geonames"].empty?
             geoname = json_result["geonames"][0]
             @latitude  = geoname["lat"]
             @longitude = geoname["lng"]

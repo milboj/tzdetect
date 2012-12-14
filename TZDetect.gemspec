@@ -10,7 +10,7 @@ Gem::Specification.new do |gem|
   gem.email         = ["milboj@gmail.com"]
   gem.description   = %q{Detects  timezone by address or location using google or geoname web service}
   gem.summary       = %q{Easy way to detect time zone by  address or location }
-  gem.homepage      = ""
+  gem.homepage      = "https://github.com/milboj/tzdetect"
   gem.required_ruby_version = ">= 1.9.2"
 
   gem.files         = `git ls-files`.split($/)
