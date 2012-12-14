@@ -1,5 +1,7 @@
 require 'tzdetect'
 require 'test/unit'
+
+require 'helper'
 class TZDetect::ParserTest < Test::Unit::TestCase
   include TZDetect
 

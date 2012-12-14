@@ -1,8 +1,8 @@
 require 'tzdetect'
 require 'test/unit'
+require 'helper'
 class TZDetect::MainTest < Test::Unit::TestCase
   include TZDetect
-  GEONAME_USERNAME= "milboj"
   def test_not_all_properties 
     assert_raises ArgumentError do
        TimeZone.new()

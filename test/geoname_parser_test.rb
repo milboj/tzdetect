@@ -2,7 +2,6 @@ require 'tzdetect'
 require 'test/unit'
 class TZDetect::ParserTest < Test::Unit::TestCase
   include TZDetect
-  GEONAME_USERNAME= "milboj"
   def test_geoname_parser_not_configured_username
     assert_raises Error::Parser do
       TZDetect::Configuration.username = nil

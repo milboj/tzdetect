@@ -1,10 +1,10 @@
 require 'tzdetect'
 require 'test/unit'
 
+require 'helper'
 
 class TZDetect::ParserTest < Test::Unit::TestCase
   include TZDetect
-  GEONAME_USERNAME= "milboj"
   def test_no_configured_user  
     assert_raises Error::GeoCoder do
       geocoder =  GeonameGeocode.new("LL", "GDSAFDSAF")
