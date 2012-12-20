@@ -76,7 +76,7 @@ Return TZInfo object
     tz.name   #  "Europe/Belgrade" 
     
     tz = TimeZone.new("US", "Miami", "Florida", 25.774265, -80.193658)
-    tz.name   #  "America/New_York"
+    tz.timezone.name   #  "America/New_York"
 
 ###  Getting the timezone for a specific latitude and longitude
 

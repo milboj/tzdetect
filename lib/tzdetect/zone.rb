@@ -66,7 +66,7 @@ module TZDetect
       # Returns TZInfo object and raise errors
       def get! country_code, city, region="", latitude=nil, longitude=nil
         m = self.new country_code, city, region, latitude, longitude
-        m.timezone!
+        m.timezone
       end
 
       # Detect timezone by country code city region and position data 
